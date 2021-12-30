@@ -1,0 +1,52 @@
+1
+
+ odd numbers in an array
+
+   let oddb=(arr)=>{
+    let odd=[];
+    for(let i in arr)
+   {
+       if(arr[i]%2!==0){
+           odd.push(arr[i]);
+   }
+}
+       console.log(odd);    
+}
+console.log(oddb([1, 2, 5, 7,8,9]));
+
+
+2.
+
+ palindrome in an array
+
+ let paliondromeb=(word)=>{
+    let len=word.length;
+    let start=word.substring(0,Math.floor(len/2))
+    let end=word.substring(len -Math.floor(len/2));
+    let flip=end.split('').reverse().join('')
+    return (start===flip);
+}
+console.log(paliondromeb('radar'));
+
+
+3.primes
+
+let primes = (arr) => {
+    return arr.filter((e) => {
+      for (let i = 2; i < e; i++) {
+        if (e % i === 0) {
+          return false;
+        }
+      }
+      return e > 1;
+    });
+  };
+  console.log(primes([1, 2, 5, 16, 25, 99, 101]));
+
+
+
+
+
+
+
+ 
